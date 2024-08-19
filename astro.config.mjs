@@ -5,22 +5,26 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'o7 Node',
+			title: 'My Docs',
 			social: {
-				github: 'https://github.com/o7node/docs',
+				github: 'https://github.com/withastro/starlight',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Node Connections',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Virginia Connection', slug: 'guides/virginia' }, 
+						{ label: 'Frankfurt Connection', slug: 'guides/frankfurt'}
 					],
+					
 				},
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
+				
+					
 			],
 		}),
 	],
