@@ -5,9 +5,9 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'o7 Node',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/o7node/docs',
 			},
 			sidebar: [
 				{
@@ -20,8 +20,10 @@ export default defineConfig({
 					
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'FAQs',
+					items: [
+						{ label: 'Frequently Asked Questions', slug: 'guides/faqs'}
+					]
 				},
 				
 					
